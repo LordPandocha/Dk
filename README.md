@@ -4,15 +4,13 @@
 
 ## Публикация
 
-1. Откройте **Settings → Pages** в репозитории.
-2. В разделе **Build and deployment** выберите **Source: GitHub Actions**.
-3. Workflow `.github/workflows/deploy.yml` автоматически опубликует сайт при следующем push или через **Actions → Deploy site to GitHub Pages → Run workflow**.
+1. В **Settings → Pages → Build and deployment** выберите **Source: GitHub Actions**.
+2. Workflow `.github/workflows/deploy.yml` собирает сайт и восстанавливает фотоатлас из оптимизированных частей.
+3. После публикации сайт доступен по адресу: https://lordpandocha.github.io/Dk/
 
-После публикации адрес сайта: https://lordpandocha.github.io/Dk/
+## Содержимое
 
-## Файлы
-
-- `index.html` — сайт и интерактивные элементы.
-- `assets/hero.svg` — обложка в аниме-футуристичном стиле.
-- `assets/photo-atlas.svg` — иллюстрации по этапам истории.
-- `.github/workflows/deploy.yml` — публикация через GitHub Pages.
+- `index.html` — сайт, галерея, сравнение «до / после», анимации и блок расположения.
+- `assets/hero.svg` — векторная графика обложки.
+- `assets/photo-atlas.webp` — фотоатлас из кадров, восстанавливаемый при сборке из `.github/photo-atlas-fixed/`.
+- Внизу сайта: встроенная Яндекс Карта и отдельная ссылка для поиска адреса в 2ГИС.
