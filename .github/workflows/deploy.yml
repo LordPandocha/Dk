@@ -18,17 +18,32 @@ jobs:
       - name: Restore presentation photos
         run: |
           cat \
-            .github/photo-atlas.part1.b64 \
+            .github/photo-atlas.head00.b64 \
+            .github/photo-atlas.head01.b64 \
+            .github/photo-atlas.head02.b64 \
+            .github/photo-atlas.head03.b64 \
+            .github/photo-atlas.head04.b64 \
+            .github/photo-atlas.head05.b64 \
+            .github/photo-atlas.head06.b64 \
+            .github/photo-atlas.head07.b64 \
             .github/photo-atlas.part2a.b64 \
-            .github/photo-atlas.part2b.b64 \
+            .github/photo-atlas.tail01.b64 \
             .github/photo-atlas.part2c.b64 \
             .github/photo-atlas.part2d.b64 \
             .github/photo-atlas.part2e.b64 \
             .github/photo-atlas.part2f.b64 \
             .github/photo-atlas.part2g.b64 \
             .github/photo-atlas.part2h.b64 > /tmp/photo-atlas.b64
-          base64 --decode /tmp/photo-atlas.b64 > assets/photo-atlas.webp
-          test -s assets/photo-atlas.webp
+          python - <<'PY'
+          import base64
+          from pathlib import Path
+          encoded = Path("/tmp/photo-atlas.b64").read_text().strip()
+          image = base64.b64decode(encoded, validate=True)
+          if image[:4] != b"RIFF" or image[8:12] != b"WEBP":
+              raise SystemExit("The presentation photo atlas is not a valid WebP file")
+          Path("assets/photo-atlas.webp").write_bytes(image)
+          print(f"Restored photo atlas: {len(image):,} bytes")
+          PY
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
