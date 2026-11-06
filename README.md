@@ -5,7 +5,7 @@
 ## Публикация
 
 1. В **Settings → Pages → Build and deployment** выберите **Source: GitHub Actions**.
-2. Workflow `.github/workflows/deploy.yml` собирает сайт и восстанавливает фотоатлас из десяти проверенных частей с точной длиной.
+2. Workflow `.github/workflows/deploy.yml` собирает сайт и восстанавливает фотоатлас из проверенных частей, сверяя размер WebP с исходным файлом.
 3. После публикации сайт доступен по адресу: https://lordpandocha.github.io/Dk/
 
 ## Содержимое
