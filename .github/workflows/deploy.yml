@@ -15,35 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Restore presentation photos
-        run: |
-          cat \
-            .github/photo-atlas-fixed/part-00a.b64 \
-            .github/photo-atlas-fixed/part-00b.b64 \
-            .github/photo-atlas-fixed/part-00c.b64 \
-            .github/photo-atlas-fixed/part-00d.b64 \
-            .github/photo-atlas-fixed/part-00e.b64 \
-            .github/photo-atlas-fixed/part-01.b64 \
-            .github/photo-atlas-fixed/part-02.b64 \
-            .github/photo-atlas-fixed/part-03.b64 \
-            .github/photo-atlas-fixed/part-04.b64 \
-            .github/photo-atlas-fixed/part-05.b64 \
-            .github/photo-atlas-fixed/part-06.b64 > /tmp/photo-atlas.b64
-          python - <<'PY'
-          import base64
-          from pathlib import Path
-          encoded = Path("/tmp/photo-atlas.b64").read_text().strip()
-          image = base64.b64decode(encoded, validate=True)
-          if image[:4] != b"RIFF" or image[8:12] != b"WEBP":
-              raise SystemExit("The presentation photo atlas is not a valid WebP file")
-          riff_size = int.from_bytes(image[4:8], "little") + 8
-          if riff_size != len(image):
-              raise SystemExit(f"WebP length mismatch: header expects {riff_size:,}, got {len(image):,}")
-          if len(image) != 41352:
-              raise SystemExit(f"Unexpected photo atlas size: {len(image):,}")
-          Path("assets/photo-atlas.webp").write_bytes(image)
-          print(f"Restored verified photo atlas: {len(image):,} bytes")
-          PY
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
