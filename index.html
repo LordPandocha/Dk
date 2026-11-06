@@ -1,92 +1,198 @@
 <!doctype html>
-<html lang="ru"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#071226"><meta name="description" content="История обновления Дома культуры в Муравленко: от замысла и работ до новых залов и пространства для встреч.">
-<title>Дом культуры Муравленко — новая глава</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#06101f;--panel:#0c1d38;--white:#f5f8ff;--muted:#a8bad0;--cyan:#54e8ff;--violet:#9478ff;--line:rgba(84,232,255,.25);--font:Manrope,Arial,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% 12%,rgba(32,107,196,.16),transparent 28%),radial-gradient(ellipse at 88% 55%,rgba(111,66,210,.12),transparent 30%),var(--bg);color:var(--white);font-family:var(--font);overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.12;background-image:linear-gradient(rgba(100,180,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(100,180,255,.1) 1px,transparent 1px);background-size:70px 70px}
-.shell{width:min(1180px,calc(100% - 48px));margin:auto}.top{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none}.mark{width:42px;height:42px;border:1px solid var(--cyan);border-radius:12px;display:grid;place-items:center;color:var(--cyan);font-weight:800;box-shadow:0 0 22px rgba(84,232,255,.14)}.brand b{display:block;font-size:10px;letter-spacing:.18em}.brand small{display:block;font-size:8px;color:var(--muted);letter-spacing:.22em;margin-top:3px}.nav{display:flex;gap:22px}.nav a,.top-link,.footer a{font-size:10px;color:#c4d2e5;text-decoration:none;font-weight:700}.nav a:hover,.footer a:hover{color:var(--cyan)}.top-link{border:1px solid var(--line);border-radius:30px;padding:11px 15px}.menu{display:none}
-.hero{height:620px;margin-top:8px;position:relative;border:1px solid var(--line);border-radius:25px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.32)}.hero-photo{position:absolute;inset:0;background-image:url('assets/photo-atlas.svg');background-size:400% 300%;background-position:100% 100%;animation:heroPan 30s ease-in-out infinite alternate;transform:scale(1.04);filter:saturate(1.06)}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,25,.96),rgba(4,12,25,.73) 43%,rgba(4,12,25,.06) 84%),linear-gradient(0deg,rgba(4,12,25,.55),transparent 35%)}.hero-copy{position:absolute;z-index:2;left:7%;top:19%;max-width:570px}.eyebrow{font-size:9px;color:var(--cyan);letter-spacing:.2em;font-weight:800;margin:0 0 20px}.eyebrow:before{content:"";display:inline-block;width:21px;height:1px;background:var(--cyan);vertical-align:middle;margin-right:10px;box-shadow:0 0 10px var(--cyan)}h1{font-size:clamp(48px,6vw,78px);line-height:.98;letter-spacing:-.06em;margin:0 0 24px}h1 em,h2 em{font-style:normal;color:var(--cyan);text-shadow:0 0 28px rgba(84,232,255,.18)}.lead{max-width:430px;color:#d6e3f3;font-size:15px;line-height:1.75;margin-bottom:28px}.cta{display:inline-flex;gap:30px;align-items:center;padding:14px 18px;border:1px solid rgba(84,232,255,.52);border-radius:28px;text-decoration:none;color:white;font-size:11px;font-weight:800;background:linear-gradient(100deg,rgba(50,140,255,.17),rgba(127,89,255,.14))}.cta span{font-size:17px;color:var(--cyan)}
-section{padding:120px 0 15px}.row{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:30px}h2{font-size:clamp(36px,4.4vw,57px);line-height:1.03;letter-spacing:-.05em;margin:0}.intro{max-width:380px;color:var(--muted);font-size:13px;line-height:1.8;margin:0 0 5px}.grid{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}.card{min-width:0}.card figcaption{display:flex;justify-content:space-between;gap:12px;padding:12px 3px 0}.card b{font-size:11px}.card small{font-size:9px;color:var(--muted);text-align:right}.frame{border:1px solid rgba(84,232,255,.32);border-radius:16px;overflow:hidden;background:#0b1a31;box-shadow:0 18px 45px rgba(0,0,0,.28)}.sprite{display:block;width:100%;aspect-ratio:16/9;background-image:url('assets/photo-atlas.svg');background-size:400% 300%;background-repeat:no-repeat}.one{background-position:0 0}.two{background-position:33.333% 0}.three{background-position:66.666% 0}.four{background-position:100% 0}.five{background-position:0 50%}.six{background-position:33.333% 50%}.seven{background-position:66.666% 50%}.eight{background-position:100% 50%}.nine{background-position:0 100%}.ten{background-position:33.333% 100%}.eleven{background-position:66.666% 100%}.twelve{background-position:100% 100%}
-.idea{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.idea p:not(.eyebrow){color:var(--muted);line-height:1.8;font-size:14px;max-width:450px}.idea .frame{position:relative}.work .grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.work .main{grid-row:span 2}.work .main .sprite{aspect-ratio:1.55}.work .grid .card:not(.main) .sprite{aspect-ratio:2.05}.compare{height:auto;aspect-ratio:16/9;position:relative;border:1px solid var(--line);border-radius:18px;overflow:hidden}.compare .layer{position:absolute;inset:0}.compare .layer .sprite{height:100%;aspect-ratio:auto}.compare .after{clip-path:inset(0 0 0 var(--split,50%))}.compare .label{position:absolute;top:18px;background:rgba(5,16,34,.9);border:1px solid var(--cyan);color:var(--cyan);padding:8px 13px;border-radius:22px;font-size:9px;letter-spacing:.18em}.compare .before .label{left:18px}.compare .after .label{right:18px}.bar{position:absolute;top:0;bottom:0;left:var(--split,50%);width:2px;background:white;box-shadow:0 0 15px var(--cyan);transform:translateX(-50%);pointer-events:none}.bar:after{content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#0a1b34;color:var(--cyan);border:1px solid var(--cyan);font-size:19px}.range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}.hint{text-align:center;color:var(--muted);font-size:10px;margin:13px 0}.two-cols{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start}.two-cols .side{margin-top:60px}.three-cols{display:grid;grid-template-columns:1.25fr .75fr;gap:22px}.three-cols .main{grid-row:span 2}.three-cols .main .sprite{aspect-ratio:1.6}.three-cols .card:not(.main) .sprite{aspect-ratio:2.05}.final{margin-top:125px;margin-bottom:0;display:grid;grid-template-columns:1.15fr .85fr;min-height:390px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--panel);box-shadow:0 24px 70px rgba(0,0,0,.32)}.final .picture .sprite{height:100%;aspect-ratio:auto}.final-copy{align-self:center;padding:38px}.final-copy p:not(.eyebrow){color:#bdcbe0;line-height:1.8;font-size:13px;max-width:390px}.footer{height:110px;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:9px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:none}.sprite[role=button]{cursor:zoom-in}
-dialog{border:0;padding:14px;background:rgba(5,12,24,.97);border-radius:16px;max-width:94vw;box-shadow:0 0 0 1px var(--line),0 30px 80px #000}dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(8px)}dialog .sprite{width:min(84vw,1100px);aspect-ratio:16/9}.close{float:right;margin:0 0 8px 8px;width:34px;height:34px;border:0;border-radius:50%;background:#102746;color:white;font-size:23px}
-@media(max-width:850px){.nav{gap:12px}.nav a{font-size:9px}.shell{width:calc(100% - 36px)}.idea{grid-template-columns:1fr;gap:22px}.row{align-items:start}.work .grid{gap:14px}.intro{max-width:310px}}
-@media(max-width:620px){.top{height:70px}.nav{display:none;position:absolute;top:64px;left:18px;right:18px;background:#07162b;border:1px solid var(--line);border-radius:14px;padding:16px;flex-direction:column;z-index:5}.nav.open{display:flex}.nav a{font-size:12px;padding:5px}.menu{display:block;margin-left:auto;margin-right:12px;background:none;border:0;color:var(--cyan);font-size:23px}.top-link{font-size:9px;padding:10px}.hero{height:570px;width:calc(100% - 18px)}.hero-copy{left:7%;top:20%;width:84%}h1{font-size:49px}.lead{font-size:13px}.shell{width:calc(100% - 28px)}section{padding-top:88px}.row{display:block;margin-bottom:22px}.intro{margin-top:15px}.grid,.work .grid,.two-cols,.three-cols{grid-template-columns:1fr;grid-template-rows:auto}.work .main,.three-cols .main{grid-row:auto}.work .main .sprite,.work .grid .card:not(.main) .sprite,.three-cols .main .sprite,.three-cols .card:not(.main) .sprite{aspect-ratio:16/9}.card figcaption{align-items:center}.card small{text-align:right}.compare{aspect-ratio:4/3}.two-cols .side{margin-top:0}.final{display:block;margin-top:90px;width:calc(100% - 18px)}.final .picture .sprite{aspect-ratio:16/9}.final-copy{padding:28px}.footer{height:95px}.footer>span{display:none}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-
-.page-progress{position:fixed;z-index:20;left:0;top:0;height:2px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--cyan),var(--violet));box-shadow:0 0 14px var(--cyan);pointer-events:none}
-@keyframes heroPan{0%{background-position:95% 96%;transform:scale(1.035)}100%{background-position:100% 100%;transform:scale(1.11)}}
-@keyframes glowSweep{0%{transform:translateX(-120%) skewX(-18deg);opacity:0}20%{opacity:.35}55%{opacity:0}100%{transform:translateX(220%) skewX(-18deg);opacity:0}}
-@keyframes floatPulse{0%,100%{transform:translateY(0);filter:drop-shadow(0 0 0 rgba(84,232,255,0))}50%{transform:translateY(-7px);filter:drop-shadow(0 8px 18px rgba(84,232,255,.14))}}
-.hero{isolation:isolate}
-.hero:before{content:"";position:absolute;z-index:1;right:8%;top:12%;width:220px;height:220px;border:1px solid rgba(84,232,255,.24);border-radius:50%;box-shadow:0 0 50px rgba(84,232,255,.12),inset 0 0 45px rgba(148,120,255,.12);pointer-events:none;animation:floatPulse 7s ease-in-out infinite}
-.hero:after{pointer-events:none}
-.frame{position:relative;isolation:isolate;transition:transform .55s cubic-bezier(.2,.75,.2,1),box-shadow .55s ease,border-color .55s ease}
-.frame:after{content:"";position:absolute;z-index:2;top:0;bottom:0;left:0;width:28%;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(130,235,255,.13),transparent);transform:translateX(-120%) skewX(-18deg);opacity:0}
-.frame:hover{transform:translateY(-5px);border-color:rgba(84,232,255,.72);box-shadow:0 24px 55px rgba(20,108,190,.22),0 0 28px rgba(84,232,255,.1)}
-.frame:hover:after{animation:glowSweep 1.1s ease}
-.sprite{transition:transform .8s cubic-bezier(.2,.75,.2,1),filter .8s ease}
-.frame:hover .sprite{transform:scale(1.045);filter:saturate(1.16) brightness(1.07)}
-.card figcaption{display:grid;grid-template-columns:1fr auto;align-items:start;gap:6px 12px;padding:14px 3px 0}
-.card figcaption b{font-size:12px}
-.card figcaption small{grid-column:2;grid-row:1;font-size:9px;color:var(--muted);text-align:right}
-.card figcaption p,.photo-note{grid-column:1/-1;margin:0;color:var(--muted);font-size:11px;line-height:1.7;max-width:620px}
-.idea-visual{min-width:0}
-.idea-visual .frame{margin-bottom:14px}
-.photo-note{padding:0 3px}
-.compare-note{margin:0 auto;text-align:center}
-.maps .map-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:22px}
-.map-frame{min-height:370px;border:1px solid rgba(84,232,255,.32);border-radius:18px;overflow:hidden;background:#0b1a31;box-shadow:0 18px 45px rgba(0,0,0,.28)}
-.map-frame iframe{display:block;width:100%;height:100%;min-height:370px;border:0;filter:saturate(.88)}
-.map-panel{padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(17,39,72,.96),rgba(8,22,43,.96));box-shadow:0 18px 45px rgba(0,0,0,.25)}
-.map-panel h3{font-size:clamp(26px,3vw,38px);line-height:1.05;letter-spacing:-.04em;margin:0 0 16px}
-.map-panel>p:not(.eyebrow){font-size:13px;line-height:1.8;color:#c3d2e5}
-.map-links{display:grid;gap:10px;margin-top:25px}
-.map-links a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 16px;border:1px solid rgba(84,232,255,.35);border-radius:12px;background:rgba(84,232,255,.055);color:#eef8ff;text-decoration:none;font-size:11px;font-weight:800;transition:background .25s ease,border-color .25s ease,transform .25s ease}
-.map-links a:hover{background:rgba(84,232,255,.14);border-color:var(--cyan);transform:translateX(3px)}
-.map-links span{color:var(--cyan);font-size:17px}
-.map-caption{display:block;margin-top:18px;color:var(--muted);font-size:9px;line-height:1.6}
-@media(max-width:850px){.maps .map-grid{grid-template-columns:1fr}.map-frame,.map-frame iframe{min-height:320px}}
-@media(max-width:620px){.card figcaption{grid-template-columns:1fr}.card figcaption small{grid-column:1;grid-row:2;text-align:left}.card figcaption p{grid-column:1}.maps .map-grid{grid-template-columns:1fr}.map-frame,.map-frame iframe{min-height:290px}.map-panel{padding:22px}.hero:before{width:135px;height:135px;right:-12px;top:12%}}
-@media(prefers-reduced-motion:reduce){.hero-photo,.hero:before{animation:none}.frame,.frame:after,.sprite{transition:none}}
-</style></head><body>
-<header class="top shell"><a class="brand" href="#top"><span class="mark">ДК</span><span><b>ДОМ КУЛЬТУРЫ</b><small>МУРАВЛЕНКО</small></span></a><button class="menu" aria-label="Открыть меню" aria-expanded="false">☰</button><nav class="nav"><a href="#idea">Замысел</a><a href="#works">Работы</a><a href="#change">До / После</a><a href="#new">Новая глава</a><a href="#space">Территория</a><a href="#location">На карте</a></nav><a class="top-link" href="#final">Смотреть историю ↗</a></header>
-<main id="top">
-<section class="hero shell"><div class="hero-photo" role="img" aria-label="Дом культуры и площадь после обновления"></div><div class="hero-copy reveal"><p class="eyebrow">ГОРОДСКОЕ ПРОСТРАНСТВО · МУРАВЛЕНКО</p><h1>Дом культуры.<br><em>Новая глава.</em></h1><p class="lead">История обновления места, где встречаются творчество, люди и городская жизнь.</p><a class="cta" href="#idea">Пройти историю <span>↓</span></a></div></section>
-<section class="idea shell" id="idea"><div class="reveal"><p class="eyebrow">СНАЧАЛА — ЗАМЫСЕЛ</p><h2>Не просто здание.<br><em>Место для новых идей.</em></h2><p>Современная архитектура и открытое пространство для творчества, общения и событий.</p></div><div class="idea-visual reveal"><div class="frame"><div class="sprite one" role="img" aria-label="Проектный замысел обновлённого здания"></div></div><p class="photo-note">Архитектурный замысел задаёт новое лицо здания и логику будущего пространства.</p></div></section>
-<section class="shell work" id="works"><div class="row reveal"><div><p class="eyebrow">ШАГ ЗА ШАГОМ</p><h2>Здание <em>в работе.</em></h2></div><p class="intro">Обновление начиналось с фасада, входной группы и внутренних помещений.</p></div><div class="grid"><figure class="card main reveal"><div class="frame"><div class="sprite two" role="img" aria-label="Работы на фасаде здания"></div></div><figcaption><b>Фасад и вход</b><small>Этап ремонта</small><p>Работы меняют внешний облик здания и формируют обновлённую входную группу.</p></figcaption></figure><figure class="card reveal"><div class="frame"><div class="sprite three" role="img" aria-label="Внутренние помещения во время работ"></div></div><figcaption><b>Внутренние пространства</b><small>Подготовка помещений</small><p>Внутри шла подготовка залов и помещений к следующему этапу обновления.</p></figcaption></figure><figure class="card reveal"><div class="frame"><div class="sprite four" role="img" aria-label="Осмотр объекта во время работ"></div></div><figcaption><b>Работа на площадке</b><small>Осмотр объекта</small><p>Обсуждение деталей и контроль хода работ помогают соединить проектный замысел с реальным результатом.</p></figcaption></figure></div></section>
-<section class="shell" id="change"><div class="row reveal"><div><p class="eyebrow">СМЕНА ОБРАЗА</p><h2>До / <em>После.</em></h2></div><p class="intro">Сравните прежний фасад с обновлённой входной группой.</p></div><div class="compare reveal" style="--split:50%"><div class="layer before"><div class="sprite five" role="img" aria-label="Дом культуры до обновления"></div><span class="label">ДО</span></div><div class="layer after"><div class="sprite six" role="img" aria-label="Дом культуры после обновления"></div><span class="label">ПОСЛЕ</span></div><div class="bar"></div><input class="range" type="range" min="0" max="100" value="50" aria-label="Сравнить до и после"></div><p class="hint">Потяните ползунок, чтобы увидеть изменения</p><p class="photo-note compare-note reveal">Слева — прежний облик Дома культуры, справа — обновлённая входная группа.</p></section>
-<section class="shell" id="new"><div class="row reveal"><div><p class="eyebrow">НОВАЯ ГЛАВА</p><h2>Пространство <em>возможностей.</em></h2></div><p class="intro">После капитального ремонта Дом культуры вновь открыл двери — теперь здесь больше возможностей для занятий, творчества и событий.</p></div><div class="two-cols"><figure class="card reveal"><div class="frame"><div class="sprite seven" role="img" aria-label="Обновлённый зрительный зал"></div></div><figcaption><b>Зал для событий</b><small>Обновлённый зрительный зал</small><p>Пространство для концертов, спектаклей, выступлений и городских мероприятий.</p></figcaption></figure><figure class="card side reveal"><div class="frame"><div class="sprite eight" role="img" aria-label="Обновлённый зал для занятий"></div></div><figcaption><b>Залы для движения</b><small>Занятия и репетиции</small><p>Залы для танцевальных занятий, репетиций и работы творческих коллективов.</p></figcaption></figure></div></section>
-<section class="shell" id="space"><div class="row reveal"><div><p class="eyebrow">МЕСТО ДЛЯ ВСТРЕЧ</p><h2>Культура <em>вокруг нас.</em></h2></div><p class="intro">Благоустроенная территория стала продолжением Дома культуры — местом, где можно встретиться, отдохнуть и провести время вместе.</p></div><div class="three-cols"><figure class="card main reveal"><div class="frame"><div class="sprite nine" role="img" aria-label="Пространство отдыха у Дома культуры"></div></div><figcaption><b>Пространство общения</b><small>Места отдыха</small><p>Открытые зоны и места для отдыха создают удобную точку встречи рядом с Домом культуры.</p></figcaption></figure><figure class="card reveal"><div class="frame"><div class="sprite ten" role="img" aria-label="Зелёные зоны и места отдыха"></div></div><figcaption><b>Зелёный двор</b><small>Благоустройство</small><p>Зелёные зоны дополняют общественное пространство и делают территорию комфортнее.</p></figcaption></figure><figure class="card reveal"><div class="frame"><div class="sprite eleven" role="img" aria-label="Открытая площадка для городских событий"></div></div><figcaption><b>Открытая площадка</b><small>Центральный помост</small><p>Помост и площадка могут становиться местом небольших встреч и городских событий.</p></figcaption></figure></div></section>
-<section class="final shell" id="final"><div class="picture"><div class="sprite twelve" role="img" aria-label="Дом культуры и благоустроенная территория вечером"></div></div><div class="final-copy reveal"><p class="eyebrow">ДОМ КУЛЬТУРЫ · МУРАВЛЕНКО</p><h2>Обновлён.<br><em>Открыт. Для вас.</em></h2><p>Культура продолжается — в новых встречах, идеях и событиях.</p><a class="cta" href="#top">Вернуться наверх <span>↑</span></a></div></section>
-
-<section class="maps shell" id="location">
-  <div class="row reveal">
-    <div><p class="eyebrow">МЫ НА КАРТЕ</p><h2>Найдите <em>нас.</em></h2></div>
-    <p class="intro">Дом культуры находится в Муравленко на улице Ленина. Постройте маршрут в привычном картографическом сервисе.</p>
-  </div>
-  <div class="map-grid">
-    <div class="map-frame reveal">
-      <iframe title="Дом культуры Муравленко на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=74.504725%2C63.789723&z=16&pt=74.504725%2C63.789723%2Cpm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1420">
+  <meta name="description" content="История обновления Дома культуры в Муравленко. Архивные фотографии, ход работ и новый облик здания.">
+  <title>Дом культуры Муравленко — история обновления</title>
+  <link rel="icon" href="assets/hero.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">ДК</span><span>Дом культуры<small>Муравленко</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden>Меню <span aria-hidden="true">☰</span></button>
+      <nav id="navigation" class="navigation" aria-label="Разделы истории">
+        <a href="#archive">Архив</a>
+        <a href="#idea">Замысел</a>
+        <a href="#works">Ремонт</a>
+        <a href="#change">До и после</a>
+        <a href="#new">Залы</a>
+        <a href="#space">Площадь</a>
+        <a href="#location">На карте</a>
+      </nav>
     </div>
-    <aside class="map-panel reveal">
-      <p class="eyebrow">АДРЕС</p>
-      <h3>Дом культуры<br><em>Муравленко</em></h3>
-      <p>Ямало-Ненецкий автономный округ, г. Муравленко, ул. Ленина, 61.</p>
-      <div class="map-links">
-        <a href="https://yandex.ru/maps/?ll=74.504725%2C63.789723&z=16&text=Муравленко%2C%20ул.%20Ленина%2C%2061" target="_blank" rel="noopener noreferrer">Открыть в Яндекс Картах <span>↗</span></a>
-        <a href="https://2gis.ru/muravlenko/search/улица%20Ленина%2C%2061" target="_blank" rel="noopener noreferrer">Найти в 2ГИС <span>↗</span></a>
+    <div class="page-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Ямал <span>/</span> Муравленко</p>
+        <h1 id="hero-title">Дом культуры<span>Новая глава</span></h1>
+        <p class="hero-lead">Как изменилось место, где город встречается, репетирует и выходит на сцену.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#archive">Читать историю <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#change">Сравнить фасады <span aria-hidden="true">↘</span></a>
+        </div>
       </div>
-      <small class="map-caption">Откройте карту, чтобы посмотреть расположение и построить маршрут.</small>
-    </aside>
-  </div>
-</section>
-</main><div class="page-progress" aria-hidden="true"></div><footer class="footer shell"><a class="brand" href="#top"><span class="mark">ДК</span><span><b>ДОМ КУЛЬТУРЫ</b><small>МУРАВЛЕНКО</small></span></a><span>Культура. Люди. Развитие.</span><a href="#top">Наверх ↑</a></footer>
-<dialog id="lightbox"><button class="close" aria-label="Закрыть">×</button><div class="sprite one"></div></dialog>
-<script>
-(()=>{const nav=document.querySelector('.nav'),menu=document.querySelector('.menu');menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*75+'ms';obs.observe(el)});const progress=document.querySelector('.page-progress');const updateProgress=()=>{const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.transform='scaleX('+(max>0?window.scrollY/max:0)+')'};window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();const hero=document.querySelector('.hero');hero?.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--pointer-x',((e.clientX-r.left)/r.width-.5).toFixed(3));hero.style.setProperty('--pointer-y',((e.clientY-r.top)/r.height-.5).toFixed(3))});const cmp=document.querySelector('.compare'),range=document.querySelector('.range');range?.addEventListener('input',e=>cmp.style.setProperty('--split',e.target.value+'%'));const dlg=document.querySelector('#lightbox'),lg=dlg.querySelector('.sprite');document.querySelectorAll('.sprite[role=img]').forEach(el=>{el.tabIndex=0;el.style.cursor='zoom-in';const open=()=>{lg.style.backgroundPosition=getComputedStyle(el).backgroundPosition;dlg.showModal()};el.addEventListener('click',open);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}})});dlg.querySelector('.close').addEventListener('click',()=>dlg.close());dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()})})();
-</script></body></html>
+      <figure class="hero-visual">
+        <img src="assets/photos/cover.webp" width="1800" height="1013" alt="Обновлённый Дом культуры за городской площадью" fetchpriority="high">
+        <figcaption><span>Слайд 1</span> Дом культуры после ремонта</figcaption>
+      </figure>
+    </section>
+
+    <section class="shell chapter" id="archive" aria-labelledby="archive-title">
+      <div class="chapter-heading" data-reveal>
+        <div><p class="eyebrow"><span>01</span> / Городской архив</p><h2 id="archive-title">Когда всё <em>начиналось</em></h2></div>
+        <p>В 1986 году в посёлке Муравленковском появился клуб «Каштан». С 1988 года он назывался Домом культуры «Украина».</p>
+      </div>
+      <div class="photo-grid archive-grid">
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/archive-panorama.webp" data-photo><img src="assets/photos/archive-panorama.webp" width="1132" height="800" alt="Выставочный коллаж с панорамой Муравленко 1987 года и современным снимком" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><span class="eyebrow">1987 и наши дни</span><strong>Панорама Муравленко</strong><a class="source" href="https://yamal-news.ru/society/2026/10/30/103474.html">Госархив ЯНАО и администрация города · выставка «Строим Ямал»</a></figcaption>
+        </figure>
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/archive-school.webp" data-photo><img src="assets/photos/archive-school.webp" width="1132" height="800" alt="Архивный снимок здания школы № 4 с газетной вырезкой на выставочном планшете" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><span class="eyebrow">1988</span><strong>Школа № 4 в посёлке Муравленковском</strong><a class="source" href="https://yamal-news.ru/society/2026/10/30/103474.html">Госархив ЯНАО и администрация города · выставка «Строим Ямал»</a></figcaption>
+        </figure>
+      </div>
+      <a class="text-link chapter-link" href="https://funds.yamalarchives.ru/funds/view/1300">Фонд Дома культуры в «Архивах Ямала» <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="shell chapter" id="idea" aria-labelledby="idea-title">
+      <div class="chapter-heading" data-reveal>
+        <div><p class="eyebrow"><span>02</span> / Замысел</p><h2 id="idea-title">От эскиза <em>к зданию</em></h2></div>
+        <p>Проект объединил обновление фасада и залов с благоустройством площади, где проходят городские события.</p>
+      </div>
+      <figure class="photo-card photo-wide" data-reveal>
+        <a class="photo-link" href="assets/photos/concept.webp" data-photo><img src="assets/photos/concept.webp" width="1440" height="810" alt="Архитектурная визуализация Дома культуры в сумерках" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+        <figcaption><strong>Будущий облик здания</strong><span class="source">Архитектурная визуализация · слайд 2</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="shell chapter" id="works" aria-labelledby="works-title">
+      <div class="chapter-heading" data-reveal>
+        <div><p class="eyebrow"><span>03</span> / Ход работ</p><h2 id="works-title">Здание <em>в работе</em></h2></div>
+        <p>Фасад, входная группа и внутренние помещения на разных этапах капитального ремонта.</p>
+      </div>
+      <div class="photo-grid photo-grid-featured">
+        <figure class="photo-card feature" data-reveal>
+          <a class="photo-link" href="assets/photos/work-facade.webp" data-photo><img src="assets/photos/work-facade.webp" width="1393" height="887" alt="Фасад Дома культуры со строительными лесами" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Фасад и вход</strong><span class="source">Фото из презентации · слайд 3</span></figcaption>
+        </figure>
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/work-interior.webp" data-photo><img src="assets/photos/work-interior.webp" width="1353" height="616" alt="Внутренние помещения Дома культуры во время ремонта" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Внутренние помещения</strong><span class="source">Фото из презентации · слайд 3</span></figcaption>
+        </figure>
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/site-visit.webp" data-photo><img src="assets/photos/site-visit.webp" width="1366" height="622" alt="Участники осмотра рядом со зданием во время ремонта" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Осмотр объекта</strong><span class="source">Фото из презентации · слайд 3</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="shell chapter" id="change" aria-labelledby="change-title">
+      <div class="chapter-heading" data-reveal>
+        <div><p class="eyebrow"><span>04</span> / Смена облика</p><h2 id="change-title">До <em>и после</em></h2></div>
+        <p>Два ракурса входной группы. Передвигайте ползунок, чтобы рассмотреть старый и обновлённый фасады.</p>
+      </div>
+      <div class="comparison" data-reveal>
+        <div class="comparison-view" id="facades">
+          <img class="before" src="assets/photos/before.webp" width="979" height="632" alt="Старый вход в Дом культуры с синей вывеской" loading="lazy" decoding="async">
+          <img class="after" src="assets/photos/after.webp" width="1440" height="930" alt="Обновлённый фасад с остеклением и деревянными вертикальными элементами" loading="lazy" decoding="async">
+          <div class="comparison-divider" aria-hidden="true"><span>↔</span></div>
+          <label class="sr-only" for="facade-range">Доля фасада до ремонта</label>
+          <input id="facade-range" type="range" min="0" max="100" value="50" step="1" aria-controls="facades" hidden>
+        </div>
+        <div class="comparison-caption">
+          <a href="assets/photos/before.webp" data-photo data-caption="Фасад до ремонта · слайд 4">До ремонта <span aria-hidden="true">↗</span></a>
+          <a href="assets/photos/after.webp" data-photo data-caption="Фасад после ремонта · слайд 4">После ремонта <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell chapter" id="new" aria-labelledby="new-title">
+      <div class="chapter-heading" data-reveal>
+        <div><p class="eyebrow"><span>05</span> / Новая глава</p><h2 id="new-title">Сцена <em>и репетиции</em></h2></div>
+        <p>После ремонта в Доме культуры снова проходят концерты, занятия и репетиции творческих коллективов.</p>
+      </div>
+      <div class="photo-grid">
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/auditorium.webp" data-photo><img src="assets/photos/auditorium.webp" width="1440" height="1045" alt="Ряды кресел и сцена в обновлённом зрительном зале" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Зрительный зал</strong><span class="source">Фото из презентации · слайд 5</span></figcaption>
+        </figure>
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/studio.webp" data-photo><img src="assets/photos/studio.webp" width="1440" height="970" alt="Танцовщица у окон обновлённого хореографического зала" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Зал для репетиций</strong><span class="source">Фото из презентации · слайд 5</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="shell chapter" id="space" aria-labelledby="space-title">
+      <div class="chapter-heading" data-reveal>
+        <div><p class="eyebrow"><span>06</span> / Территория</p><h2 id="space-title">Место <em>для встреч</em></h2></div>
+        <p>На площади у Дома культуры появились места для отдыха и площадка для событий под открытым небом.</p>
+      </div>
+      <div class="photo-grid photo-grid-featured">
+        <figure class="photo-card feature" data-reveal>
+          <a class="photo-link" href="assets/photos/square.webp" data-photo><img src="assets/photos/square.webp" width="1440" height="857" alt="Посетители отдыхают на деревянных скамейках перед Домом культуры" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Площадь у Дома культуры</strong><span class="source">Фото из презентации · слайд 6</span></figcaption>
+        </figure>
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/garden.webp" data-photo><img src="assets/photos/garden.webp" width="750" height="326" alt="Зелёная зона и дорожки рядом с Домом культуры" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Зелёный двор</strong><span class="source">Фото из презентации · слайд 6</span></figcaption>
+        </figure>
+        <figure class="photo-card" data-reveal>
+          <a class="photo-link" href="assets/photos/stage.webp" data-photo><img src="assets/photos/stage.webp" width="950" height="414" alt="Вид сверху на площадку с деревянным помостом" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true">↗</span></a>
+          <figcaption><strong>Открытая площадка</strong><span class="source">Фото из презентации · слайд 6</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="shell chapter" id="final" aria-labelledby="final-title">
+      <div class="final-panel" data-reveal>
+        <img src="assets/photos/evening.webp" width="1440" height="479" alt="Вечернее освещение площади и Дома культуры" loading="lazy" decoding="async">
+        <div class="final-copy">
+          <p class="eyebrow"><span>07</span> / Продолжение</p>
+          <h2 id="final-title">Культура <em>продолжается</em></h2>
+          <a class="button button-primary" href="#location">Как добраться <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell chapter location" id="location" aria-labelledby="location-title">
+      <div class="chapter-heading" data-reveal>
+        <div><p class="eyebrow">Как добраться</p><h2 id="location-title">Дом культуры <em>на карте</em></h2></div>
+        <p>Ямало-Ненецкий автономный округ, Муравленко, улица Ленина, 61.</p>
+      </div>
+      <div class="map-panel">
+        <iframe title="Дом культуры Муравленко на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=74.504725%2C63.789723&amp;z=16&amp;pt=74.504725%2C63.789723%2Cpm2rdm" loading="lazy"></iframe>
+        <div class="map-links">
+          <a class="button button-primary" href="https://yandex.ru/maps/?text=Муравленко%2C%20Ленина%2C%2061">Яндекс Карты <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://2gis.ru/muravlenko/search/улица%20Ленина%2C%2061">2ГИС <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell site-footer">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">ДК</span><span>Дом культуры<small>Муравленко</small></span></a>
+    <a class="text-link" href="#top">Наверх <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <dialog class="lightbox" aria-labelledby="photo-title">
+    <form method="dialog"><button class="lightbox-close icon-button" aria-label="Закрыть фото" autofocus>×</button></form>
+    <figure><img alt=""><figcaption id="photo-title" aria-live="polite"></figcaption></figure>
+    <div class="lightbox-controls">
+      <button class="icon-button" type="button" data-step="-1" aria-label="Предыдущее фото">←</button>
+      <span class="photo-count" aria-hidden="true"></span>
+      <button class="icon-button" type="button" data-step="1" aria-label="Следующее фото">→</button>
+    </div>
+  </dialog>
+</body>
+</html>
